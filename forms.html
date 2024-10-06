@@ -7,12 +7,42 @@
     </head>
     <body>
         <h1>Fill the form</h1>
-        <form>
+        <form action="index.html" method="get">
             <label for="name">Name :</label>
             <input type="text" id="name" name="name" placeholder="enter your name"><br>
-            <label for="area">Area :</label>
+            <label for="area">Area  :</label>
             <input type="text" id="area" name="area" placeholder="enter your area" ><br>
-            <label>Gender</label>
+            <hr>
+            <label>Gender :</label><br>   
+            <input type="radio" id="gen1" name="gender" value="male">
+            <label for="gen1">Male</label><br>
+            <input type="radio" id="gen2" name="gender" value="female">
+            <label for="gen2">Female</label><br>
+            <input type="radio" id="gen3" name="gender" value="others">
+            <label for="gen3">Others</label><br> 
+            <hr>
+            <label>Select any two :</label><br>
+            <input type="checkbox" id="skill1" name="skills" value="html">
+            <label for="skill1">HTML</label><br>
+            <input type="checkbox" id="skill2" name="skills" value="css">
+            <label for="skill2">CSS</label><br>
+            <input type="checkbox" id="skill3" name="skills" value="Js">
+            <label for="skill3">JS</label><br>
+            <hr>
+            <label for="MT">Married??</label>
+            <select id="MT" name="mstatus">
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+               <!---- <option value="" disabled selected>Select any one</option>-->
+            </select>
+                
+           <br><button type="submit">submit</button>
+           </form>
+           
+
+
+
+
             
        <!--commenting to check git push and pull -->
         </form>
