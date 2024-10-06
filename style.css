@@ -1,0 +1,55 @@
+#gen1{
+    background-color: brown;
+}
+#gen2{
+    background-color: brown;
+}
+#gen3{
+    background-color: brown;
+}
+.skills-class{
+    background-color: aqua;
+}
+    
+.pee {
+    border-radius: 5px;
+    border: 10px solid cornflowerblue; /* Added border width */
+    background-color: white; /* Added background color */
+    padding: 16px; /* Added padding for better spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+    hr{
+        color: #ff0000;
+    }
+
+    .btn{
+        
+        background-color: green;
+         
+    }
+    .btn:hover{
+        cursor:pointer;
+        color:red;
+        background-color: greenyellow;
+    }
+    
+    h1:hover{
+        color:blueviolet;
+    }
+.anchor-psudo{
+    background-color: black;
+    color:chartreuse
+
+}
+
+.anchor-psudo:link{
+    color:tomato;
+    
+}
+
+.anchor-psudo:active{
+    color:turquoise
+}
+    
+    
+    

@@ -4,39 +4,47 @@
         <meta charset="UTF-8">
         <meta description="basic forms in html">
         <title>HTML forms</title>
+        <link href="./style.css" rel="stylesheet">
+        <style>
+        .namedesign{
+            background-color: yellow ;
+        }
+    </style>
+
     </head>
     <body>
-        <h1>Fill the form</h1>
-        <form action="index.html" method="get">
-            <label for="name">Name :</label>
+        <h1 style="background-color: brown;">Fill the form</h1>
+        <form class="pee" action="index.html" method="get">
+            <label class="namedesign"for="name">Name :</label>
             <input type="text" id="name" name="name" placeholder="enter your name"><br>
-            <label for="area">Area  :</label>
+            <label class="namedesign" for="area">Area  :</label>
             <input type="text" id="area" name="area" placeholder="enter your area" ><br>
-            <hr>
-            <label>Gender :</label><br>   
+            <hr>   
+            <label style="background-color: green;">Gender :</label><br>   
             <input type="radio" id="gen1" name="gender" value="male">
-            <label for="gen1">Male</label><br>
+            <label for="gen1" id="gen1" >Male</label><br>   
             <input type="radio" id="gen2" name="gender" value="female">
-            <label for="gen2">Female</label><br>
+            <label for="gen2" id="gen2">Female</label><br>
             <input type="radio" id="gen3" name="gender" value="others">
-            <label for="gen3">Others</label><br> 
-            <hr>
-            <label>Select any two :</label><br>
+            <label for="gen3" id="gen3">Others</label><br> 
+            <hr style="background-color: rgb(241, 3, 3);">
+            <label class="skills-class">Select any two :</label><br>
             <input type="checkbox" id="skill1" name="skills" value="html">
             <label for="skill1">HTML</label><br>
             <input type="checkbox" id="skill2" name="skills" value="css">
             <label for="skill2">CSS</label><br>
             <input type="checkbox" id="skill3" name="skills" value="Js">
             <label for="skill3">JS</label><br>
-            <hr>
+            <hr style="background-color: black;">
             <label for="MT">Married??</label>
             <select id="MT" name="mstatus">
                 <option value="yes">YES</option>
                 <option value="no">NO</option>
                <!---- <option value="" disabled selected>Select any one</option>-->
             </select>
+            <br><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" class="anchor-psudo" target="_blank">pseudo elements</a>
                 
-           <br><button type="submit">submit</button>
+           <br><button class=btn type="submit">submit</button>
            </form>
            
 
