@@ -12,10 +12,10 @@
 }
     
 .pee {
-    border-radius: 5px;
-    border: 10px solid cornflowerblue; /* Added border width */
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0); /* Added border width */
     background-color: white; /* Added background color */
-    padding: 16px; /* Added padding for better spacing */
+    padding: 20px; /* Added padding for better spacing */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
     hr{
@@ -36,6 +36,7 @@
     h1:hover{
         color:blueviolet;
     }
+
 .anchor-psudo{
     background-color: black;
     color:chartreuse
