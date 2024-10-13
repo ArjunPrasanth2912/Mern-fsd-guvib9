@@ -1,0 +1,57 @@
+.box1{
+    border:5px;
+    border-style: solid;
+    border-color: black;
+
+    margin: 100px;
+    padding:50px 25px 50px 25px;
+    background-color: red;
+    text-align: justify;
+    text-shadow: 5px blanchedalmond;
+    
+}
+
+
+
+.p-static{
+    position: static;
+    border:2px solid  brown;
+    padding:10px 5px;
+    margin:10px;
+}
+
+.p-relative{
+    position: relative;
+    border:5px solid pink;
+    top : 20px;
+    left :25px;
+    right : 25px;
+    padding: 10px;
+    
+}
+
+.p-absolute{
+    position: absolute;
+    border:2px solid green;
+    top:50px;
+
+
+}
+
+.p-fixed{
+    position: fixed;
+    right : 100px;
+    border: 5px solid red;
+}
+
+.p-sticky{
+    position: sticky;
+    border: 5px solid blue;
+    top: 500px;
+    background-color: aqua;
+
+}
+body{
+    background-image: linear-gradient(to bottom right , violet,green);
+    
+}
