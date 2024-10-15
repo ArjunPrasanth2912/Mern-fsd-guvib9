@@ -1,10 +1,22 @@
 .h1-class{
     color: red;
     background-color: black;
-    display: inline;
+   display: inline;
+    position:relative;
+    left:550px;
+}
+
+
+
+.h1-class:hover {
+    color:rgb(255, 255, 255);
+   
 }
 
 table{
+    position:relative;
+    top: 100px;
+    left:500px;
     border-style:solid;
     border-width:5px 5px 5px 5px;
     border-color : black blue black blue;
@@ -12,4 +24,49 @@ table{
 }
 th,td{
     border:2px solid black;
+
+} 
+
+th:hover{
+    color: gold;
+}
+
+
+a:link{
+    color: rgb(216, 31, 14);
+}
+
+a:visited{
+    color: rgb(84, 243, 4);
+}
+
+a:active{
+    color:yellow;
+}
+.tt_para{
+    display:none;
+    background-color: blue;
+}
+
+.tool_tip:hover .tt_para{
+    display: block;
+}
+
+p:first-child{
+    color: blueviolet;
+}
+
+h2::before{
+    content : "0";
+}
+h2::after{
+    content:"0";
+}
+
+li::marker{
+    color: blue;
+}
+
+li:nth-child(odd){
+    color:aqua;
 }
