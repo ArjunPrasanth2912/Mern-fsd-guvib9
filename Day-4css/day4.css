@@ -1,0 +1,37 @@
+.flex-main{
+    display:flex;
+    background-color: red;
+    padding: 25px;
+    flex-direction: row-reverse;
+}
+
+.flex-item{
+    background-color: blue;
+    margin:50px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    line-height: 150px;
+
+}
+
+.grid-main{
+    display: grid;
+    width:90%;
+    height: 600px;
+    background-color: blueviolet;
+    padding:20px;
+    grid-template-columns: auto auto auto;
+    gap:10px;
+    margin-top: 50px;
+    justify-content: center;
+    
+    align-content: space-between;
+}
+
+.grid-main > div{
+    background-color: yellow;
+    text-align: center;
+    font-size: 30px;
+    padding:20px 0px;
+}
