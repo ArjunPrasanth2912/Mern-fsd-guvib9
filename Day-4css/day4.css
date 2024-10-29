@@ -1,13 +1,19 @@
 .flex-main{
     display:flex;
+  
     background-color: red;
+    /* border:5px dotted black; */
     padding: 25px;
+ 
     flex-direction: row-reverse;
+    
 }
 
 .flex-item{
     background-color: blue;
-    margin:50px;
+     margin:50px; 
+     padding:10px;
+     border:2px solid black;
     text-align: center;
     height: 150px;
     width: 150px;
@@ -21,12 +27,13 @@
     height: 600px;
     background-color: blueviolet;
     padding:20px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto; 
+    /* grid-template-rows: auto auto auto auto; */
     gap:10px;
     margin-top: 50px;
-    justify-content: center;
+    /* justify-content: center; */
     
-    align-content: space-between;
+    align-content: space-between;  */
 }
 
 .grid-main > div{
