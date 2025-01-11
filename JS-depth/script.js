@@ -103,9 +103,9 @@
 
 // console.log(output);
 
-//----------------
+// ----------------
 
-//Callback  hell-nested callbacks
+// Callback  hell-nested callbacks
 
 // setTimeout(()=>{
 // console.log("after 3")
@@ -127,94 +127,208 @@
 //     },1000)
 // },1000)
 
-//Promises - used for asynchronous operations
-//then, catch and finally
-//resolve and reject
-  //3 states - pending,fulfilled,rejected
+// Promises - used for asynchronous operations
+// then, catch and finally
+// resolve and reject
+//   3 states - pending,fulfilled,rejected
 
-   let promise1=new Promise((resolve,reject)=>{
+//    let promise1=new Promise((resolve,reject)=>{
 
-    setTimeout(()=>{
-                resolve("Advance JS 1 pending done")
-    },5000)
-    })
+//     setTimeout(()=>{
+//                 resolve("Advance JS 1 pending done")
+//     },5000)
+//     })
 
-    let promise2=new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            reject("Advance Js 1 pending still pending")
-        },1000)
-    })
+//     let promise2=new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             reject("Advance Js 1 pending still pending")
+//         },1000)
+//     })
 
-    let promise3=new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("Advance JS 1 pending ongoing")
-        },3000)
-    })
+//     let promise3=new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve("Advance JS 1 pending ongoing")
+//         },3000)
+//     })
 
-    // promise1
-    // .then((msg)=>{
-    //     console.log(msg);
-    // })
-    // .catch((er)=>{
-    //       console.error(er);
-    // })
+//     promise1
+//     .then((msg)=>{
+//         console.log(msg);
+//     })
+//     .catch((er)=>{
+//           console.error(er);
+//     })
 
-    // promise2
-    // .then((msg)=>{
-    //     console.log(msg);
-    // })
-    // .catch((er)=>{
-    //       console.error(er);
-    // })
+//     promise2
+//     .then((msg)=>{
+//         console.log(msg);
+//     })
+//     .catch((er)=>{
+//           console.error(er);
+//     })
 
-    // promise3
-    // .then((msg)=>{
-    //     console.log(msg);
-    // })
-    // .catch((er)=>{
-    //       console.error(er);
-    // })
+//     promise3
+//     .then((msg)=>{
+//         console.log(msg);
+//     })
+//     .catch((er)=>{
+//           console.error(er);
+//     })
 
-    //Promise.all --> returns when all promises resolves or any one gets rejected like AND , if all are resolved the returned value gets printed in the 
-    //same order being called in an array
+//     Promise.all --> returns when all promises resolves or any one gets rejected like AND , if all are resolved the returned value gets printed in the 
+//     same order being called in an array
 
-    // Promise.all([promise1,promise2,promise3])
-    // .then((value)=>{
-    //     console.log(value);
-    // })
-    // .catch((value)=>{
-    //     console.error(value);
-    // })
+//     Promise.all([promise1,promise2,promise3])
+//     .then((value)=>{
+//         console.log(value);
+//     })
+//     .catch((value)=>{
+//         console.error(value);
+//     })
 
-    //Promise.any--> returns the first one that gets resolved if all gets rejected throws an aggregate error
+//     Promise.any--> returns the first one that gets resolved if all gets rejected throws an aggregate error
 
-    // Promise.any([promise1,promise2,promise3])
-    // .then((value)=>{
-    //     console.log(value);
-    // })
-    // .catch((value)=>{
-    //     console.error(value);
-    // })
+//     Promise.any([promise1,promise2,promise3])
+//     .then((value)=>{
+//         console.log(value);
+//     })
+//     .catch((value)=>{
+//         console.error(value);
+//     })
 
-    //Promise.allSettled()--> returns when all promises gets settled wheather rejected or reoslved same like all gets printed in an array
+//     Promise.allSettled()--> returns when all promises gets settled wheather rejected or reoslved same like all gets printed in an array
 
-    //  Promise.allSettled([promise1,promise2,promise3])
-    // .then((value)=>{
-    //     console.log(value);
-    // })
-    // .catch((value)=>{
-    //     console.error(value);
-    // })
+//      Promise.allSettled([promise1,promise2,promise3])
+//     .then((value)=>{
+//         console.log(value);
+//     })
+//     .catch((value)=>{
+//         console.error(value);
+//     })
 
-    //Promise.race-->returns the one that gets settled first
+//     Promise.race-->returns the one that gets settled first
 
-    Promise.race([promise1,promise2,promise3])
-    .then((value)=>{
-        console.log(value);
-    })
-    .catch((value)=>{
-        console.error(value);
-    })
-    .finally((value)=>{
-        console.log("finally")
-    })
+//     Promise.race([promise1,promise2,promise3])
+//     .then((value)=>{
+//         console.log(value);
+//     })
+//     .catch((value)=>{
+//         console.error(value);
+//     })
+//     .finally((value)=>{
+//         console.log("finally")
+//     })
+
+//------------------------------------
+//error handling session
+
+//async and await
+
+// function resolveAfter2Seconds(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//                 resolve("Resolved")
+//         },2000)
+
+//     })
+// }   
+
+// let pr1=()=>{
+//     console.log("PR1 invoked")
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve("task 2 done")
+//         },3000)
+// })}
+
+// async function asynccall(){
+
+//     try{
+//         let result1= await resolveAfter2Seconds()
+//         console.log(result1)
+//         let result2=await pr1()
+//         console.log(result2)
+
+//     }
+//     catch(error){
+//         console.error("error came to catch",error)
+//     }
+//     finally{
+//         console.log("The End")
+//     }
+// }
+
+// async function asynccall(){
+
+//     try{
+//         let [result1,result2]= await Promise.all([resolveAfter2Seconds(),pr1()])
+//         console.log(result1)
+//         console.log(result2)
+        
+
+//     }
+//     catch(error){
+//         console.error("error came to catch",error)
+//     }
+//     finally{
+//         console.log("The End")
+//     }
+// }
+
+// asynccall()
+
+// let time=0;
+
+// setInterval(()=>{
+//     console.log(++time)
+// },1000)
+
+//---------fetch
+
+let url="https://restcountries.com/v3.1/all"
+
+// fetch(url)
+// .then((response)=>response.json())
+// .then((data)=>console.log("dataooo",data))
+// .catch((error)=>console.log("pee",error.message))
+
+const constructCards = (data)=>{
+    let root = document.getElementById("root")
+    //data.forEach((country)=>{})-data[i] needs to be changed to country
+    for(let i=0;i<data.length;i++){
+        let cardwrapper = document.createElement("div")
+        cardwrapper.setAttribute("class", "card m-3 ")
+        cardwrapper.setAttribute("style", "width :18rem;")
+        cardwrapper.innerHTML = `<img src="${data[i].flags.svg}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${data[i].name.common}</h5>
+              <p class="card-text">${data[i].capital?data[i].capital[0]:"-"}</p>
+            </div>`
+         root.append(cardwrapper)
+    
+}
+    
+    }
+
+
+async function getData(){
+    try{
+        let response= await fetch(url)
+        let data = await response.json()
+        if(response.status===200){
+            constructCards(data)
+        }
+        else{
+            throw `${response.status}:${data.message??"Error occured"}`
+        }
+
+    }
+    catch(error){
+        //alert(error)
+        console.log(error)
+
+    }
+}
+
+getData()
+
