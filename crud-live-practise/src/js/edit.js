@@ -1,4 +1,4 @@
-const BASE_URL = "https://675525cb36bcd1eec852acd9.mockapi.io/employee"
+const BASE_URL = "https://67835cc58b6c7a1316f42b71.mockapi.io/employee"
 
 let params = new URLSearchParams(window.location.search)
 let id = params.get("id")
